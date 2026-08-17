@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Library</title>
+  
+  <link rel="stylesheet" href="./bootstrap.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./user.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">📚 Book Library</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Books</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Arabic</a></li>
+              <li><a class="dropdown-item" href="#">Mathematics</a></li>
+              <li><a class="dropdown-item" href="#">Studies</a></li>
+              <li><a class="dropdown-item" href="#">Sciences</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Videos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Arabic</a></li>
+              <li><a class="dropdown-item" href="#">Mathematics</a></li>
+              <li><a class="dropdown-item" href="#">Studies</a></li>
+              <li><a class="dropdown-item" href="#">Sciences</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <a href="#" class="btn btn-outline-danger mx-3">Sign Up</a>
+        <a href="#" class="btn btn-danger">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search -->
+  <form class="search">
+    <input type="search" placeholder="Search books..." />
+    <button><i class="fa fa-search"></i></button>
+  </form>
+
+  <!-- Up Coming Books -->
+  <section id="books" class="up-coming fade-in">
+    <h2>📖 Up Coming Books</h2>
+    <div class="books-container">
+      <a href="story1.html" class="card">
+        <img src="adventure on the lost sland.png" alt="">
+        <div class="card-body">
+          <h5>Adventure on the Lost Island</h5>
+          <p>A 1946 American romantic adventure drama...</p>
+        </div>
+      </a>
+
+      <a href="story2.html" class="card">
+        <img src="the unseen force.png" alt="">
+        <div class="card-body">
+          <h5>The Unseen Force</h5>
+          <p>A powerful energy that guides and influences our lives...</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Galaxy Section -->
+  <section class="galaxy-section">
+    <div class="overlay">
+      <h2>✨ Discover More Worlds in Our Library ✨</h2>
+      <p>Explore the magic of imagination and the endless universe of stories...</p>
+    </div>
+  </section>
+
+  <!-- Most Watched Books -->
+  <section class="up-coming fade-in">
+    <h2>🔥 Most Watched Books</h2>
+    <div class="books-container">
+      <a href="story5.html" class="card">
+        <img src="The Space Visitor.png" alt="">
+        <div class="card-body">
+          <h5>The Space Visitor</h5>
+          <p>Imagine waking up to find a friendly alien sitting on your bed...</p>
+        </div>
+      </a>
+
+      <a href="story3.html" class="card">
+        <img src="the lake of secrets.png" alt="">
+        <div class="card-body">
+          <h5>The Lake of Secrets</h5>
+          <p>Hidden deep within the forest, a mysterious lake holds magic...</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>جميع الحقوق محفوظة لموقع مكتبة الكتب © 2025</p>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <p><i class="fa fa-envelope"></i> BookLibrary@gmail.com</p>
+  </footer>
+
+  <!-- Fade Animation -->
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+    function showOnScroll() {
+      fadeElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) el.classList.add('show');
+      });
+    }
+    window.addEventListener('scroll', showOnScroll);
+    window.addEventListener('load', showOnScroll);
+  </script>
+
+  <!-- تم تصحيح مسارات الجافاسكريبت أيضاً -->
+  <script src="./popper.js"></script>
+  <script src="./bootstrap.js"></script>
+</body>
+</html>

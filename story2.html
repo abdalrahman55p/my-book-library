@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Unseen Force - Book Library</title>
+
+  <!-- Bootstrap & Icons -->
+  <link rel="stylesheet" href="../user/bootstrap.css" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: black;
+      padding: 15px 0;
+    }
+
+    a.nav-link, .navbar-brand {
+      color: white !important;
+      font-weight: bold;
+    }
+
+    a.nav-link:hover {
+      color: #e92525 !important;
+    }
+
+    .story-header {
+      padding: 60px 20px;
+      background: url('the unseen force.png') center/cover no-repeat;
+      position: relative;
+    }
+
+    .story-header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .story-header h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 45px;
+      text-shadow: 0 0 15px red;
+    }
+
+    .story-content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #111;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 50, 50, 0.6);
+    }
+
+    .story-content img {
+      width: 250px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(255, 50, 50, 0.6);
+    }
+
+    .story-content p {
+      text-align: justify;
+      font-size: 18px;
+      line-height: 1.8;
+      color: #ddd;
+    }
+
+    .btn-danger {
+      background-color: #e92525;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .btn-danger:hover {
+      background-color: #ff4c4c;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #dc3545;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: white;
+      font-size: 25px;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🔹 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="user.html">📚 Book Library</a>
+    </div>
+  </nav>
+
+  <!-- 🔹 Story Header -->
+  <section class="story-header">
+    <h1>The Unseen Force</h1>
+  </section>
+
+  <!-- 🔹 Story Content -->
+  <div class="story-content">
+    <img src="the unseen force.png" alt="The Unseen Force Cover" />
+    <p>
+      “The Unseen Force” tells the mysterious story of an invisible energy that shapes the destiny
+      of those who encounter it. Set in a small village, strange phenomena begin to unfold —
+      objects move on their own, whispers echo in empty rooms, and people start questioning
+      reality itself.  
+      <br><br>
+      A young physicist, Sarah, decides to uncover the truth behind these mysterious powers.
+      What she discovers challenges everything we know about science, life, and the forces that bind the universe.
+    </p>
+    <br>
+    <a href="https://dalilk4english.com/library/novel?id=792723" class="btn btn-danger">
+      📖 Read the Novel
+    </a>
+  </div>
+
+  <!-- 🔹 Footer -->
+  <footer>
+    <p>جميع الحقوق محفوظة لموقع مكتبة الكتب © 2025</p>
+    <div>
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+    </div>
+  </footer>
+
+  <script src="../user/popper.js"></script>
+  <script src="../user/bootstrap.js"></script>
+</body>
+</html>

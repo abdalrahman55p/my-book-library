@@ -1,0 +1,95 @@
+
+
+h2 {
+    color:white;
+    font-size: 200px;
+}
+@media (max-width: 500px) {
+    h2 {color: red}
+}
+ 
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px;
+}
+
+body{
+    margin: 0px;
+    background-image: linear-gradient(to right, #01022d,#000);
+
+    
+    display: flex;
+ 
+    align-items: center;
+
+    background-size: cover;
+    background-repeat:no-repeat;  
+}
+.container{
+
+    width: 2000px;
+    height: 1300px;
+}
+
+.container{
+    background-image: 
+    linear-gradient(to right, #01022de5 0%, transparent),
+
+    url(abdo.ll.jpeg)
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+ul{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+}
+ul a{
+    border-bottom: 2px solid transparent;
+}
+ul a:{order-bottom-color: white;
+}
+.content{
+   color: white;
+   width:50% ;
+   margin-top: 50px;
+   padding: 30px;
+}
+.content h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.content p{
+    letter-spacing: 3px;
+    width: 400px;
+    padding: 20px 0;
+}
+.content button{
+    font-size: 20px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.content button:hover{
+    background-color: transparent;
+    border-color: bisque;
+    color: bisque
+}
